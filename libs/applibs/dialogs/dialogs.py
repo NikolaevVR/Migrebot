@@ -192,7 +192,7 @@ def card(content, title=None, background_color=None, size=(.7, .5)):
     '''Вывод диалоговых окон с кастомным контентом.'''
 
     if not background_color:
-        background_color = [1.0, 1.0, 1.0, 1]
+        background_color = [1.0, 0, 0, 1]
 
     card = MDCard(size_hint=(1, 1), padding=5) #, background_color=background_color)
 
@@ -212,6 +212,6 @@ def card(content, title=None, background_color=None, size=(.7, .5)):
 
     dialog = ModalView(size_hint=size, background_color=[0, 0, 0, .2])
     dialog.add_widget(card)
-    #dialog.open()
+    dialog.open()
 
     return dialog

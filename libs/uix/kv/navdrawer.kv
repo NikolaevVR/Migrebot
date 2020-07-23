@@ -76,22 +76,22 @@
                 spacing: dp(10)
 
                 LabelSection:
-                    text:  app.translation._('РњРµРЅСЋ:')
+                    text:  app.translation._('Меню:')
                     events_callback: lambda x: x
 
                 SingleIconItem:
                     icon: 'puzzle'
-                    text: app.translation._('РџР»Р°РіРёРЅС‹')
+                    text: app.translation._('Плагины')
                     events_callback: app.show_plugins
 
                 SingleIconItem:
                     icon: 'web'
-                    text: app.translation._('РЇР·С‹Рє')
+                    text: app.translation._('Язык')
                     events_callback: app.select_locale
 
                 SingleIconItem:
                     icon: 'language-python'
-                    text: app.translation._('Р›РёС†РµРЅР·РёСЏ')
+                    text: app.translation._('Лицензия')
                     events_callback: app.show_license
 
                 SingleIconItem:

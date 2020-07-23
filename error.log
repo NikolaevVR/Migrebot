@@ -1,6 +1,14 @@
 Traceback (most recent call last):
-  File "D:/учеба/Мигребот/main.py", line 73, in main
-    app = Migren()
-  File "D:\учеба\Мигребот\migren.py", line 50, in __init__
-    super(PyConversations, self).__init__(**kvargs)
-NameError: name 'PyConversations' is not defined
+  File "D:/учеба/Мигребот/main.py", line 70, in main
+    from migren import Migren
+  File "D:\учеба\Мигребот\migren.py", line 31, in <module>
+    from libs.utils.showplugins import ShowPlugins
+  File "D:\учеба\Мигребот\libs\utils\__init__.py", line 16, in <module>
+    from . showplugins import ShowPlugins
+  File "D:\учеба\Мигребот\libs\utils\showplugins.py", line 19, in <module>
+    from dialogs import card, dialog
+  File "D:\учеба\Мигребот\libs/applibs\dialogs\__init__.py", line 15, in <module>
+    from . dialogs import card, dialog, dialog_progress, input_dialog
+  File "D:\учеба\Мигребот\libs/applibs\dialogs\dialogs.py", line 19, in <module>
+    from applibs.kivymd.card import MDCard, MDSeparator
+ModuleNotFoundError: No module named 'applibs'
