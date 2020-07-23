@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:/учеба/Мигребот/main.py", line 73, in main
+    app = Migren()
+  File "D:\учеба\Мигребот\migren.py", line 50, in __init__
+    super(PyConversations, self).__init__(**kvargs)
+NameError: name 'PyConversations' is not defined
