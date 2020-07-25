@@ -1,12 +1,3 @@
-# This file created with KivyCreatorProject
-# <https://github.com/HeaTTheatR/KivyCreatorProgect
-#
-# Copyright В© 2017 Easy
-#
-# For suggestions and questions:
-# <kivydevelopment@gmail.com>
-# 
-# LICENSE: MIT
 
 
 

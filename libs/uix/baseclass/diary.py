@@ -10,8 +10,11 @@
 # 
 # LICENSE: MIT
 
-from kivy.uix.boxlayout import BoxLayout
+
+import webbrowser
+from kivy.uix.screenmanager import Screen
 
 
-class Diary(BoxLayout):
-    pass
+class Diary(Screen):
+    def open_url(self, instance, url):
+        webbrowser.open(url)

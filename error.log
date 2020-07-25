@@ -1,14 +1,52 @@
 Traceback (most recent call last):
-  File "D:/учеба/Мигребот/main.py", line 70, in main
-    from migren import Migren
-  File "D:\учеба\Мигребот\migren.py", line 31, in <module>
-    from libs.utils.showplugins import ShowPlugins
-  File "D:\учеба\Мигребот\libs\utils\__init__.py", line 16, in <module>
-    from . showplugins import ShowPlugins
-  File "D:\учеба\Мигребот\libs\utils\showplugins.py", line 19, in <module>
-    from dialogs import card, dialog
-  File "D:\учеба\Мигребот\libs/applibs\dialogs\__init__.py", line 15, in <module>
-    from . dialogs import card, dialog, dialog_progress, input_dialog
-  File "D:\учеба\Мигребот\libs/applibs\dialogs\dialogs.py", line 19, in <module>
-    from applibs.kivymd.card import MDCard, MDSeparator
-ModuleNotFoundError: No module named 'applibs'
+  File "D:/учеба/Мигребот/main.py", line 66, in main
+    app.run()
+  File "D:\Python\lib\site-packages\kivy\app.py", line 855, in run
+    runTouchApp()
+  File "D:\Python\lib\site-packages\kivy\base.py", line 504, in runTouchApp
+    EventLoop.window.mainloop()
+  File "D:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 747, in mainloop
+    self._mainloop()
+  File "D:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 479, in _mainloop
+    EventLoop.idle()
+  File "D:\Python\lib\site-packages\kivy\base.py", line 339, in idle
+    Clock.tick()
+  File "D:\Python\lib\site-packages\kivy\clock.py", line 591, in tick
+    self._process_events()
+  File "kivy\_clock.pyx", line 384, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 414, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 412, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 167, in kivy._clock.ClockEvent.tick
+  File "D:\Python\lib\site-packages\kivy\uix\scrollview.py", line 1172, in _do_touch_up
+    super(ScrollView, self).on_touch_up(touch)
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 571, in on_touch_up
+    if child.dispatch('on_touch_up', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 571, in on_touch_up
+    if child.dispatch('on_touch_up', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\учеба\Мигребот\libs/applibs\kivymd\list.py", line 419, in on_touch_up
+    super(BaseListItem, self).on_touch_up(touch)
+  File "D:\учеба\Мигребот\libs/applibs\kivymd\ripplebehavior.py", line 68, in on_touch_up
+    return super(CommonRipple, self).on_touch_up(touch)
+  File "D:\Python\lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+    self.dispatch('on_release')
+  File "kivy\_event.pyx", line 703, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1214, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1098, in kivy._event.EventObservers._dispatch
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 64, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "<string>", line 53, in <module>
+  File "D:\учеба\Мигребот\migren.py", line 121, in show_diary
+    self.manager.current = 'diary'
+  File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+  File "kivy\properties.pyx", line 497, in kivy.properties.Property.__set__
+  File "kivy\properties.pyx", line 544, in kivy.properties.Property.set
+  File "kivy\properties.pyx", line 599, in kivy.properties.Property.dispatch
+  File "kivy\_event.pyx", line 1214, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1120, in kivy._event.EventObservers._dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\screenmanager.py", line 1038, in on_current
+    screen = self.get_screen(value)
+  File "D:\Python\lib\site-packages\kivy\uix\screenmanager.py", line 1064, in get_screen
+    raise ScreenManagerException('No Screen with name "%s".' % name)
+kivy.uix.screenmanager.ScreenManagerException: No Screen with name "diary".
