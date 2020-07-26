@@ -11,17 +11,10 @@
 
     BoxLayout:
         orientation: 'vertical'
-        padding: [Window.width*0.1,Window.height*0.05]
+        padding: [Window.width*0.1, Window.height*0.05]
         spacing: Window.height*0.02
 
-        Label:
-            size_hint: None, None
-            height: dp(20)
-            width: self.texture_size[0]
-            halign: 'left'
-            color: [app.theme_cls.primary_color]
-            font_size: '18sp'
-            text: app.translation._('Добавление записи')
+
 
         Label:
             size_hint: None, None
@@ -30,25 +23,21 @@
             halign: 'left'
             color: app.theme_cls.primary_color
             font_size: '18sp'
-            text: app.translation._('Тип боли')
+            text: app.translation._('Добавление записи'+'\n'+'Тип боли')
 
-        BoxLayout:
-            orientation: 'horizontal'
+        GridLayout:
+            rows: 2
             Button:
                 text: '1'
-                on_press:  app.Send_Mail()
+
             Button:
                 text: '2'
-                on_press:  app.Send_Mail()
-
-        BoxLayout:
-            orientation: 'horizontal'
             Button:
                 text: '3'
-                on_press:  app.Send_Mail()
+
             Button:
                 text: '4'
-                on_press:  app.Send_Mail()
+
 
 
         Label:
@@ -60,23 +49,16 @@
             font_size: '18sp'
             text: app.translation._('Локализация боли')
 
-        BoxLayout:
-            orientation: 'horizontal'
+        GridLayout:
+            cols: 2
             Button:
                 text: '1'
-                on_press:  app.Send_Mail()
             Button:
                 text: '2'
-                on_press:  app.Send_Mail()
-
-        BoxLayout:
-            orientation: 'horizontal'
             Button:
                 text: '3'
-                on_press:  app.Send_Mail()
             Button:
                 text: '4'
-                on_press:  app.Send_Mail()
 
         Label:
             size_hint: None, None
@@ -94,5 +76,4 @@
             font_size: '14sp'
 
         Button:
-            text: 'Отправить'
-            on_press:  app.Send_Mail()
+            text: 'Добавить'

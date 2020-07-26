@@ -19,17 +19,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migren.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="102">
-                <caret line="114" column="38" lean-forward="true" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+              <first_editor relative-caret-position="153">
+                <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
                 <folding>
                   <element signature="e#2#11#0" expanded="true" />
                 </folding>
               </first_editor>
               <second_editor relative-caret-position="-119" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -46,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            <state relative-caret-position="157">
+              <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -82,10 +91,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/libs/uix/kv/startscreen.kv" />
-        <option value="$PROJECT_DIR$/libs/uix/kv/navdrawer.kv" />
         <option value="$PROJECT_DIR$/libs/uix/kv/basescreen.kv" />
         <option value="$PROJECT_DIR$/libs/uix/kv/diary.kv" />
         <option value="$PROJECT_DIR$/migren.py" />
+        <option value="$PROJECT_DIR$/libs/uix/kv/navdrawer.kv" />
+        <option value="$PROJECT_DIR$/libs/uix/kv/note.kv" />
       </list>
     </option>
   </component>
@@ -113,6 +123,12 @@
               <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
               <item name="Мигребот" type="462c0819:PsiDirectoryNode" />
               <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Мигребот" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="applibs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
@@ -364,11 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1305" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-102" />
@@ -414,6 +425,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/note.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libs/uix/kv/basescreen.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -421,23 +440,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/migren.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="102">
-            <caret line="114" column="38" lean-forward="true" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+          <first_editor relative-caret-position="153">
+            <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
             <folding>
               <element signature="e#2#11#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
         </state>
       </provider>
     </entry>
