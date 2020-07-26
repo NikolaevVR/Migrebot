@@ -1,32 +1,60 @@
 Traceback (most recent call last):
   File "D:/учеба/Мигребот/main.py", line 66, in main
     app.run()
-  File "D:\Python\lib\site-packages\kivy\app.py", line 829, in run
-    root = self.build()
-  File "D:\учеба\Мигребот\migren.py", line 75, in build
-    self.load_all_kv_files(os.path.join(self.directory, 'libs', 'uix', 'kv'))
-  File "D:\учеба\Мигребот\migren.py", line 87, in load_all_kv_files
-    Builder.load_string(kv.read())
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 368, in load_string
-    parser = Parser(content=string, filename=fn)
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 401, in __init__
-    self.parse(content)
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 510, in parse
-    objects, remaining_lines = self.parse_level(0, lines)
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 592, in parse_level
-    current_object = ParserRule(self, ln, name, rlevel)
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 251, in __init__
-    self._detect_selectors()
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 293, in _detect_selectors
-    self._build_rule()
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 309, in _build_rule
-    'Invalid rule (must be inside <>)')
-kivy.lang.parser.ParserException: Parser: File "<inline>", line 17:
-...
-     15:    name: 'base'
-     16:
->>   17:<<<<<<< HEAD
-     18:    BoxLayout:
-     19:        orientation: 'vertical'
-...
-Invalid rule (must be inside <>)
+  File "D:\Python\lib\site-packages\kivy\app.py", line 855, in run
+    runTouchApp()
+  File "D:\Python\lib\site-packages\kivy\base.py", line 504, in runTouchApp
+    EventLoop.window.mainloop()
+  File "D:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 747, in mainloop
+    self._mainloop()
+  File "D:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 479, in _mainloop
+    EventLoop.idle()
+  File "D:\Python\lib\site-packages\kivy\base.py", line 342, in idle
+    self.dispatch_input()
+  File "D:\Python\lib\site-packages\kivy\base.py", line 327, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "D:\Python\lib\site-packages\kivy\base.py", line 233, in post_dispatch_input
+    listener.dispatch('on_motion', etype, me)
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\core\window\__init__.py", line 1402, in on_motion
+    self.dispatch('on_touch_down', me)
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\core\window\__init__.py", line 1418, in on_touch_down
+    if w.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\учеба\Мигребот\libs/applibs\kivymd\vendor\navigationdrawer\__init__.py", line 597, in on_touch_down
+    self._main_panel.on_touch_down(touch)
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\screenmanager.py", line 1191, in on_touch_down
+    return super(ScreenManager, self).on_touch_down(touch)
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\relativelayout.py", line 288, in on_touch_down
+    ret = super(RelativeLayout, self).on_touch_down(touch)
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+    if child.dispatch('on_touch_down', touch):
+  File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
+  File "D:\Python\lib\site-packages\kivy\uix\behaviors\button.py", line 151, in on_touch_down
+    self.dispatch('on_press')
+  File "kivy\_event.pyx", line 703, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1214, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1098, in kivy._event.EventObservers._dispatch
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 64, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "<string>", line 32, in <module>
+  File "D:\учеба\Мигребот\migren.py", line 113, in add_note
+    self.screen.ids.base.add_name_previous_screen()
+  File "kivy\weakproxy.pyx", line 32, in kivy.weakproxy.WeakProxy.__getattr__
+AttributeError: 'BaseScreen' object has no attribute 'add_name_previous_screen'

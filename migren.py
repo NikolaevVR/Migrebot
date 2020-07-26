@@ -110,10 +110,11 @@ class Migren(App):
 
 
     def add_note(self, *args):
+        #self.screen.ids.base.add_name_previous_screen()
         self.nav_drawer.toggle_nav_drawer()
         self.manager.current = 'note'
-        self.screen.ids.action_bar.left_action_items = \
-            [['chevron-left', lambda x: self.back_screen(27)]]
+        #self.screen.ids.action_bar.left_action_items = \
+         #   [['chevron-left', lambda x: self.back_screen(27)]]
 
 
     def show_diary(self, *args):
