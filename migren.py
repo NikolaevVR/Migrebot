@@ -29,7 +29,6 @@ from dialogs import card
 
 
 class Migren(App):
-
     title = 'Дневник головной боли'
     icon = 'icon.png'
     nav_drawer = ObjectProperty()
