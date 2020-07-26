@@ -1,8 +1,8 @@
 
 
 <Diary>:
+    _app: app
     name: 'diary'
-
     FloatLayout:
 
         Image:
@@ -13,23 +13,19 @@
     BoxLayout:
         orientation: 'vertical'
         padding: [Window.width*0.1,Window.height*0.3]
-        Label:
-            color: 0, 0, 0, 1
+        spacing: Window.height*0.02
+        TextInput:
+            id: mail
+            hint_text:'Введите e-mail'
+            size_hint: 1, 0.5
             font_size: '14sp'
-            text:
-                app.translation._('Введите e-mail:')
 
         TextInput:
-            font_size: '14sp'
-
-        Label:
-            color: 0, 0, 0, 1
-            font_size: '14sp'
-            text:
-                app.translation._('Введите тему письма:')
-
-        TextInput:
+            id: theme
+            hint_text:'Введите тему письма'
+            size_hint: 1, 0.5
             font_size: '14sp'
 
         Button:
             text: 'Отправить'
+            on_press:  app.Send_Mail()

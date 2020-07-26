@@ -67,8 +67,6 @@ class Migren(App):
         config.setdefault('General', 'language', 'en')
 
     def set_value_from_config(self):
-
-
         self.config.read(os.path.join(self.directory, 'migren.ini'))
         self.lang = self.config.get('General', 'language')
 
@@ -89,8 +87,6 @@ class Migren(App):
                     Builder.load_string(kv.read())
 
     def events_program(self, instance, keyboard, keycode, text, modifiers):
-
-
         if keyboard in (1001, 27):
             if self.nav_drawer.state == 'open':
                 self.nav_drawer.toggle_nav_drawer()
@@ -101,7 +97,6 @@ class Migren(App):
         return True
 
     def back_screen(self, event=None):
-
         if event in (1001, 27):
             if self.manager.current == 'base':
                 self.dialog_exit()
@@ -119,6 +114,10 @@ class Migren(App):
         self.manager.current = 'diary'
         self.screen.ids.action_bar.left_action_items = \
             [['chevron-left', lambda x: self.back_screen(27)]]
+
+    def Send_Mail(self, *args):
+        print('хуем тебе по ебалу дать надо')
+        toast(self.translation._('Саси бибу'))
 
 
     def show_plugins(self, *args):
