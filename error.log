@@ -1,4 +1,5 @@
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 700, in _apply_rule
     setattr(widget_set, key, value)
   File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
@@ -7,10 +8,20 @@ Traceback (most recent call last):
   File "kivy\properties.pyx", line 532, in kivy.properties.Property.set
   File "kivy\properties.pyx", line 1252, in kivy.properties.OptionProperty.check
 ValueError: BoxLayout.orientation is set to an invalid option 'Horizontal'. Must be one of: ['horizontal', 'vertical']
+=======
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 696, in _apply_rule
+    setattr(widget_set, key, value)
+  File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+  File "kivy\properties.pyx", line 497, in kivy.properties.Property.__set__
+  File "kivy\properties.pyx", line 1356, in kivy.properties.ReferenceListProperty.set
+  File "kivy\properties.pyx", line 1345, in kivy.properties.ReferenceListProperty.check
+ValueError: Button.size_hint value length is immutable
+>>>>>>> master
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "C:/Users/Юрий/Downloads/Migrebot-master/main.py", line 66, in main
     app.run()
   File "C:\Python\lib\site-packages\kivy\app.py", line 829, in run
@@ -57,4 +68,51 @@ ValueError: BoxLayout.orientation is set to an invalid option 'Horizontal'. Must
   File "kivy\properties.pyx", line 541, in kivy.properties.Property.set
   File "kivy\properties.pyx", line 532, in kivy.properties.Property.set
   File "kivy\properties.pyx", line 1252, in kivy.properties.OptionProperty.check
+=======
+  File "D:/учеба/Мигребот/main.py", line 66, in main
+    app.run()
+  File "D:\Python\lib\site-packages\kivy\app.py", line 829, in run
+    root = self.build()
+  File "D:\учеба\Мигребот\migren.py", line 76, in build
+    self.screen = StartScreen()
+  File "D:\Python\lib\site-packages\kivy\uix\boxlayout.py", line 145, in __init__
+    super(BoxLayout, self).__init__(**kwargs)
+  File "D:\Python\lib\site-packages\kivy\uix\layout.py", line 76, in __init__
+    super(Layout, self).__init__(**kwargs)
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 361, in __init__
+    rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
+    rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
+    rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 657, in _apply_rule
+    root=rctx['ids']['root'], rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
+    rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
+    rule_children=rule_children)
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 707, in _apply_rule
+    e), cause=tb)
+kivy.lang.builder.BuilderException: Parser: File "<inline>", line 31:
+...
+     29:
+     30:        Button:
+>>   31:            size_hint: Window.width*[0.15, 0.2]
+     32:            background_normal: 'D://учеба/Мигребот/data/images/add.png'
+     33:            background_down: 'D://учеба/Мигребот/data/images/add.png'
+...
+ValueError: Button.size_hint value length is immutable
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 696, in _apply_rule
+    setattr(widget_set, key, value)
+  File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+  File "kivy\properties.pyx", line 497, in kivy.properties.Property.__set__
+  File "kivy\properties.pyx", line 1356, in kivy.properties.ReferenceListProperty.set
+  File "kivy\properties.pyx", line 1345, in kivy.properties.ReferenceListProperty.check
+>>>>>>> master
 

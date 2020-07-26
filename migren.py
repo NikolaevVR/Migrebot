@@ -109,11 +109,13 @@ class Migren(App):
             self.screen.ids.action_bar.left_action_items = \
                 [['menu', lambda x: self.nav_drawer._toggle()]]
 
+
     def add_note(self, *args):
         self.nav_drawer.toggle_nav_drawer()
         self.manager.current = 'note'
         self.screen.ids.action_bar.left_action_items = \
             [['chevron-left', lambda x: self.back_screen(27)]]
+
 
     def show_diary(self, *args):
         self.nav_drawer.toggle_nav_drawer()
