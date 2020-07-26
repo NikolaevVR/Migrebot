@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 700, in _apply_rule
+    setattr(widget_set, key, value)
+  File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+  File "kivy\properties.pyx", line 497, in kivy.properties.Property.__set__
+  File "kivy\properties.pyx", line 541, in kivy.properties.Property.set
+  File "kivy\properties.pyx", line 532, in kivy.properties.Property.set
+  File "kivy\properties.pyx", line 1252, in kivy.properties.OptionProperty.check
+ValueError: BoxLayout.orientation is set to an invalid option 'Horizontal'. Must be one of: ['horizontal', 'vertical']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/ёрий/Downloads/Migrebot-master/main.py", line 66, in main
+    app.run()
+  File "C:\Python\lib\site-packages\kivy\app.py", line 829, in run
+    root = self.build()
+  File "C:\Users\ёрий\Downloads\Migrebot-master\migren.py", line 76, in build
+    self.screen = StartScreen()
+  File "C:\Python\lib\site-packages\kivy\uix\boxlayout.py", line 145, in __init__
+    super(BoxLayout, self).__init__(**kwargs)
+  File "C:\Python\lib\site-packages\kivy\uix\layout.py", line 76, in __init__
+    super(Layout, self).__init__(**kwargs)
+  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 361, in __init__
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 657, in _apply_rule
+    root=rctx['ids']['root'], rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 707, in _apply_rule
+    e), cause=tb)
+kivy.lang.builder.BuilderException: Parser: File "<inline>", line 38:
+...
+     36:
+     37:        BoxLayout:
+>>   38:            orientation: 'Horizontal'
+     39:            Button:
+     40:                text: 'ќтправить'
+...
+ValueError: BoxLayout.orientation is set to an invalid option 'Horizontal'. Must be one of: ['horizontal', 'vertical']
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 700, in _apply_rule
+    setattr(widget_set, key, value)
+  File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+  File "kivy\properties.pyx", line 497, in kivy.properties.Property.__set__
+  File "kivy\properties.pyx", line 541, in kivy.properties.Property.set
+  File "kivy\properties.pyx", line 532, in kivy.properties.Property.set
+  File "kivy\properties.pyx", line 1252, in kivy.properties.OptionProperty.check
+

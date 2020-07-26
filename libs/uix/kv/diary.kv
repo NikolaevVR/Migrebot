@@ -1,0 +1,34 @@
+
+
+<Diary>:
+    theme: theme
+    mail: mail
+    name: 'diary'
+    FloatLayout:
+
+        Image:
+            source: 'icon.png'
+            opacity: .4
+
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: [Window.width*0.1,Window.height*0.3]
+        spacing: Window.height*0.02
+        TextInput:
+            id: mail
+            hint_text:'Введите e-mail'
+            size_hint: 1, 0.5
+            font_size: '14sp'
+
+
+        TextInput:
+            id: theme
+            hint_text:'Введите тему письма'
+            size_hint: 1, 0.5
+            font_size: '14sp'
+
+
+        Button:
+            text: 'Отправить'
+            on_press:  app.Send_Mail()
