@@ -1,86 +1,22 @@
 Traceback (most recent call last):
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 249, in create_handler
-    return eval(value, idmap), bound_list
-  File "<string>", line 74, in <module>
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 76, in __getattribute__
-    return getattr(object.__getattribute__(self, '_obj'), name)
-AttributeError: 'Migren' object has no attribute 'show_senddiary'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 692, in _apply_rule
-    rctx['ids'])
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 254, in create_handler
-    cause=tb)
-kivy.lang.builder.BuilderException: Parser: File "<inline>", line 74:
-...
-     72:                    icon: 'web'
-     73:                    text: app.translation._('Отправить дневник')
->>   74:                    events_callback: app.show_senddiary
-     75:
-     76:                SingleIconItem:
-...
-AttributeError: 'Migren' object has no attribute 'show_senddiary'
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 249, in create_handler
-    return eval(value, idmap), bound_list
-  File "<string>", line 74, in <module>
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 76, in __getattribute__
-    return getattr(object.__getattribute__(self, '_obj'), name)
-
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
   File "D:/учеба/Мигребот/main.py", line 66, in main
     app.run()
   File "D:\Python\lib\site-packages\kivy\app.py", line 829, in run
     root = self.build()
-  File "D:\учеба\Мигребот\migren.py", line 76, in build
-    self.screen = StartScreen()
-  File "D:\Python\lib\site-packages\kivy\uix\boxlayout.py", line 145, in __init__
-    super(BoxLayout, self).__init__(**kwargs)
-  File "D:\Python\lib\site-packages\kivy\uix\layout.py", line 76, in __init__
-    super(Layout, self).__init__(**kwargs)
-  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 361, in __init__
-    rule_children=rule_children)
-  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
-    rule_children=rule_children)
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
-    rule_children=rule_children)
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 657, in _apply_rule
-    root=rctx['ids']['root'], rule_children=rule_children)
-  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
-    rule_children=rule_children)
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
-    rule_children=rule_children)
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 707, in _apply_rule
-    e), cause=tb)
-kivy.lang.builder.BuilderException: Parser: File "<inline>", line 74:
-...
-     72:                    icon: 'web'
-     73:                    text: app.translation._('Отправить дневник')
->>   74:                    events_callback: app.show_senddiary
-     75:
-     76:                SingleIconItem:
-...
-BuilderException: Parser: File "<inline>", line 74:
-...
-     72:                    icon: 'web'
-     73:                    text: app.translation._('Отправить дневник')
->>   74:                    events_callback: app.show_senddiary
-     75:
-     76:                SingleIconItem:
-...
-AttributeError: 'Migren' object has no attribute 'show_senddiary'
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 249, in create_handler
-    return eval(value, idmap), bound_list
-  File "<string>", line 74, in <module>
-  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 76, in __getattribute__
-    return getattr(object.__getattribute__(self, '_obj'), name)
-
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 692, in _apply_rule
-    rctx['ids'])
-  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 254, in create_handler
-    cause=tb)
-
+  File "D:\учеба\Мигребот\migren.py", line 75, in build
+    self.load_all_kv_files(os.path.join(self.directory, 'libs', 'uix', 'kv'))
+  File "D:\учеба\Мигребот\migren.py", line 87, in load_all_kv_files
+    Builder.load_string(kv.read())
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 368, in load_string
+    parser = Parser(content=string, filename=fn)
+  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 401, in __init__
+    self.parse(content)
+  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 507, in parse
+    self.execute_directives()
+  File "D:\Python\lib\site-packages\kivy\lang\parser.py", line 471, in execute_directives
+    mod = __import__(package)
+  File "D:\учеба\Мигребот\libs\uix\baseclass\about.py", line 5, in <module>
+    class About(Screen):
+  File "D:\учеба\Мигребот\libs\uix\baseclass\about.py", line 7, in About
+    print(mail)
+NameError: name 'mail' is not defined

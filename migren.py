@@ -115,10 +115,15 @@ class Migren(App):
         self.screen.ids.action_bar.left_action_items = \
             [['chevron-left', lambda x: self.back_screen(27)]]
 
-    def Send_Mail(self, *args):
-        print('хуем тебе по ебалу дать надо')
-        toast(self.translation._('Саси бибу'))
 
+    def Send_Mail(self, *args):
+        global mail
+        mail = self.screen.ids.diary.ids.mail.text
+        print(mail)
+        global theme
+        theme = self.screen.ids.diary.ids.theme.text
+        print(theme)
+        toast(self.translation._('Дневник отправлен'))
 
     def show_plugins(self, *args):
         self.plugin.show_plugins()
