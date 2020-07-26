@@ -1,14 +1,3 @@
-# -*- coding: utf-8 -*-
-#
-# This file created with KivyCreatorProject
-# <https://github.com/HeaTTheatR/KivyCreatorProgect
-#
-# Copyright В© 2017 Easy
-#
-# For suggestions and questions:
-# <kivydevelopment@gmail.com>
-# 
-# LICENSE: MIT
 
 #:import os os
 #:import ModifiedNavigationDrawer libs.uix.navigationdrawer.ModifiedNavigationDrawer
@@ -80,26 +69,17 @@
                     events_callback: lambda x: x
 
                 SingleIconItem:
-                    icon: 'puzzle'
-                    text: app.translation._('Плагины')
-                    events_callback: app.show_plugins
+                    icon: 'web'
+                    text: app.translation._('Отправить дневник')
+                    events_callback: app.show_diary
 
                 SingleIconItem:
-                    icon: 'web'
+                    icon: 'puzzle'
                     text: app.translation._('Язык')
                     events_callback: app.select_locale
-
-                SingleIconItem:
-                    icon: 'language-python'
-                    text: app.translation._('Лицензия')
-                    events_callback: app.show_license
 
                 SingleIconItem:
                     icon: 'information'
                     text: 'About'
                     events_callback: app.show_about
 
-                SingleIconItem:
-                    icon: 'puzzle'
-                    text: app.translation._('Дневник')
-                    events_callback: app.show_diary

@@ -11,10 +11,10 @@
 # LICENSE: MIT
 
 
-import webbrowser
+
 from kivy.uix.screenmanager import Screen
 
 
+
 class Diary(Screen):
-    def open_url(self, instance, url):
-        webbrowser.open(url)
+    pass

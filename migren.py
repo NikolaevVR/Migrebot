@@ -115,13 +115,11 @@ class Migren(App):
                 [['menu', lambda x: self.nav_drawer._toggle()]]
 
     def show_diary(self, *args):
-        #self.screen.ids.license.ids.text_license.text = \
-         #  self.translation._('%s') % open(
-          #     os.path.join(self.directory, 'LICENSE'), encoding='utf-8').read()
         self.nav_drawer.toggle_nav_drawer()
         self.manager.current = 'diary'
         self.screen.ids.action_bar.left_action_items = \
             [['chevron-left', lambda x: self.back_screen(27)]]
+
 
     def show_plugins(self, *args):
         self.plugin.show_plugins()
@@ -146,18 +144,18 @@ class Migren(App):
         self.screen.ids.action_bar.left_action_items = \
             [['chevron-left', lambda x: self.back_screen(27)]]
 
-    def show_license(self, *args):
-        self.screen.ids.license.ids.text_license.text = \
-            self.translation._('%s') % open(
-                os.path.join(self.directory, 'LICENSE'), encoding='utf-8').read()
-        self.nav_drawer._toggle()
-        self.manager.current = 'license'
-        self.screen.ids.action_bar.left_action_items = \
-            [['chevron-left', lambda x: self.back_screen()]]
-        self.screen.ids.action_bar.title = \
-            self.translation._('MIT LICENSE')
-        self.screen.ids.action_bar.left_action_items = \
-            [['chevron-left', lambda x: self.back_screen(27)]]
+   # def show_license(self, *args):
+   #     self.screen.ids.license.ids.text_license.text = \
+   #         self.translation._('%s') % open(
+   #             os.path.join(self.directory, 'LICENSE'), encoding='utf-8').read()
+    #    self.nav_drawer._toggle()
+    #    self.manager.current = 'license'
+    #    self.screen.ids.action_bar.left_action_items = \
+    #        [['chevron-left', lambda x: self.back_screen()]]
+    #    self.screen.ids.action_bar.title = \
+    #        self.translation._('MIT LICENSE')
+    #    self.screen.ids.action_bar.left_action_items = \
+    #        [['chevron-left', lambda x: self.back_screen(27)]]
 
 
     def select_locale(self, *args):

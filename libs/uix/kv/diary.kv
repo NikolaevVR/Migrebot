@@ -10,3 +10,26 @@
             opacity: .4
 
 
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 200
+        Label:
+            color: 0, 0, 0, 1
+            font_size: '14sp'
+            text:
+                app.translation._('Введите e-mail:')
+
+        TextInput:
+            font_size: '14sp'
+
+        Label:
+            color: 0, 0, 0, 1
+            font_size: '14sp'
+            text:
+                app.translation._('Введите тему письма:')
+
+        TextInput:
+            font_size: '14sp'
+
+        Button:
+            text: 'Отправить'
