@@ -130,8 +130,8 @@ class Migren(App):
             [['chevron-left', lambda x: self.back_screen(27)]]
 
     def send_email(self, *args):
-        addr_from = "Gavrilin-Yuriy@mail.ru"  # Отправитель
-        password = "qwerty666"  # Пароль
+        addr_from = "_"  # Отправитель
+        password = "_"  # Пароль
 
         msg = MIMEMultipart()  # Создаем сообщение
         msg['From'] = addr_from  # Адресат
