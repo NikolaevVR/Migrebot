@@ -2,6 +2,7 @@
 
 import os
 import sys
+import smtplib
 from ast import literal_eval
 
 from kivy.app import App
@@ -27,6 +28,11 @@ from kivymd.theming import ThemeManager
 from toast import toast
 from dialogs import card
 
+import mimetypes
+from email import encoders
+from email.mime.base import MIMEBase
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 class Migren(App):
     title = 'Дневник головной боли'
@@ -110,9 +116,11 @@ class Migren(App):
 
 
     def add_note(self, *args):
+        #self.screen.ids.base.add_name_previous_screen()
+        self.nav_drawer.toggle_nav_drawer()
         self.manager.current = 'note'
-        self.screen.ids.action_bar.left_action_items = \
-            [['chevron-left', lambda x: self.back_screen(27)]]
+        #self.screen.ids.action_bar.left_action_items = \
+         #   [['chevron-left', lambda x: self.back_screen(27)]]
 
 
     def show_diary(self, *args):
@@ -121,14 +129,37 @@ class Migren(App):
         self.screen.ids.action_bar.left_action_items = \
             [['chevron-left', lambda x: self.back_screen(27)]]
 
+    def send_email(self, *args):
+        addr_from = "Gavrilin-Yuriy@mail.ru"  # Отправитель
+        password = "qwerty666"  # Пароль
 
-    def Send_Mail(self, *args):
-        global mail
-        mail = self.screen.ids.diary.ids.mail.text
-        print(mail)
-        global theme
-        theme = self.screen.ids.diary.ids.theme.text
-        print(theme)
+        msg = MIMEMultipart()  # Создаем сообщение
+        msg['From'] = addr_from  # Адресат
+        msg['To'] = self.screen.ids.diary.ids.mail.text  # Получатель
+        msg['Subject'] = self.screen.ids.diary.ids.theme.text  # Тема сообщения
+        name = 'diary.xls'
+        filepath = os.path.join(os.getcwd(), name)
+        filename = os.path.basename(filepath)
+        body = 'Дневник головной боли'  # Текст сообщения
+        msg.attach(MIMEText(body, 'plain'))  # Добавляем в сообщение текст
+
+        if os.path.isfile(filepath):  # Если файл существует
+            ctype, encoding = mimetypes.guess_type(filepath)  # Определяем тип файла на основе его расширения
+            if ctype is None or encoding is not None:  # Если тип файла не определяется
+                ctype = 'application/octet-stream'  # Будем использовать общий тип
+            maintype, subtype = ctype.split('/', 1)  # Получаем тип и подтип
+            with open(filepath, 'rb') as fp:
+                file = MIMEBase(maintype, subtype)  # Используем общий MIME-тип
+                file.set_payload(fp.read())  # Добавляем содержимое общего типа (полезную нагрузку)
+                fp.close()
+            encoders.encode_base64(file)  # Содержимое должно кодироваться как Base64
+            file.add_header('Content-Disposition', 'attachment', filename=filename)  # Добавляем заголовки
+            msg.attach(file)  # Присоединяем файл к сообщению
+
+        smtpObj = smtplib.SMTP_SSL('smtp.mail.ru', 465)  # Создаем объект SMTP
+        smtpObj.login(addr_from, password)  # Получаем доступ
+        smtpObj.send_message(msg)  # Отправляем сообщение
+        smtpObj.quit()  # Выходим
         toast(self.translation._('Дневник отправлен'))
 
     def show_plugins(self, *args):
