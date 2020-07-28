@@ -130,17 +130,17 @@ class Migren(App):
             [['chevron-left', lambda x: self.back_screen(27)]]
 
     def send_email(self, *args):
-        addr_from = "_"  # Отправитель
-        password = "_"  # Пароль
+        addr_from = "Создать почту для бота"  # Отправитель
+        password = "Пароль от почты"  # Пароль
 
         msg = MIMEMultipart()  # Создаем сообщение
         msg['From'] = addr_from  # Адресат
-        msg['To'] = self.screen.ids.diary.ids.mail.text  # Получатель
+        msg['To'] = self.screen.ids.diary.ids.mail_to.text  # Получатель
         msg['Subject'] = self.screen.ids.diary.ids.theme.text  # Тема сообщения
         name = 'diary.xls'
         filepath = os.path.join(os.getcwd(), name)
         filename = os.path.basename(filepath)
-        body = 'Дневник головной боли'  # Текст сообщения
+        body = 'Адресс для обратной связи: ' + self.screen.ids.diary.ids.add_mail.text  # Текст сообщения
         msg.attach(MIMEText(body, 'plain'))  # Добавляем в сообщение текст
 
         if os.path.isfile(filepath):  # Если файл существует
@@ -156,10 +156,10 @@ class Migren(App):
             file.add_header('Content-Disposition', 'attachment', filename=filename)  # Добавляем заголовки
             msg.attach(file)  # Присоединяем файл к сообщению
 
-        smtpObj = smtplib.SMTP_SSL('smtp.mail.ru', 465)  # Создаем объект SMTP
-        smtpObj.login(addr_from, password)  # Получаем доступ
-        smtpObj.send_message(msg)  # Отправляем сообщение
-        smtpObj.quit()  # Выходим
+        server = smtplib.SMTP_SSL('smtp.yandex.ru', 465)  # Создаем объект SMTP
+        server.login(addr_from, password)  # Получаем доступ
+        server.send_message(msg)  # Отправляем сообщение
+        server.quit()  # Выходим
         toast(self.translation._('Дневник отправлен'))
 
     def show_plugins(self, *args):

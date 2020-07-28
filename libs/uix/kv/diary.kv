@@ -2,7 +2,8 @@
 
 <Diary>:
     theme: theme
-    mail: mail
+    mail_to: mail_to
+    add_mail: add_mail
     name: 'diary'
     FloatLayout:
 
@@ -13,18 +14,23 @@
 
     BoxLayout:
         orientation: 'vertical'
-        padding: [Window.width*0.1,Window.height*0.3]
+        padding: [Window.width*0.1,Window.height*0.27]
         spacing: Window.height*0.02
         TextInput:
-            id: mail
-            hint_text:'Введите e-mail'
+            id: mail_to
+            hint_text:'Введите e-mail Врача'
             size_hint: 1, 0.5
             font_size: '14sp'
-
 
         TextInput:
             id: theme
             hint_text:'Введите тему письма'
+            size_hint: 1, 0.5
+            font_size: '14sp'
+
+        TextInput:
+            id: add_mail
+            hint_text:'Введите e-mail для обратной связи'
             size_hint: 1, 0.5
             font_size: '14sp'
 
