@@ -2,7 +2,10 @@
 
 <Diary>:
     theme: theme
-    mail: mail
+    mail_to: mail_to
+    add_mail: add_mail
+    user_name: user_name
+    comment: comment
     name: 'diary'
     FloatLayout:
 
@@ -13,14 +16,23 @@
 
     BoxLayout:
         orientation: 'vertical'
-        padding: [Window.width*0.1,Window.height*0.3]
+        padding: [Window.width*0.1,Window.height*0.12]
         spacing: Window.height*0.02
+
+        Label:
+            size_hint: None, None
+            height: dp(17)
+            width: self.texture_size[0]
+            halign: 'left'
+            color: app.theme_cls.primary_color
+            font_size: '17sp'
+            text: app.translation._('Отправка дневника врачу')
+
         TextInput:
-            id: mail
-            hint_text:'Введите e-mail'
+            id: mail_to
+            hint_text:'Введите e-mail Врача'
             size_hint: 1, 0.5
             font_size: '14sp'
-
 
         TextInput:
             id: theme
@@ -28,7 +40,24 @@
             size_hint: 1, 0.5
             font_size: '14sp'
 
+        TextInput:
+            id: user_name
+            hint_text:'Введите Ваше ФИО полностью'
+            size_hint: 1, 0.5
+            font_size: '14sp'
+
+        TextInput:
+            id: add_mail
+            hint_text:'Введите e-mail для обратной связи'
+            size_hint: 1, 0.5
+            font_size: '14sp'
+
+        TextInput:
+            id: comment
+            hint_text:'Комментарий'
+            size_hint: 1, 1.5
+            font_size: '14sp'
 
         Button:
             text: 'Отправить'
-            on_press:  app.Send_Mail()
+            on_press:  app.send_email()
