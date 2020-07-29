@@ -84,14 +84,6 @@ class Migren(App):
         return super(Migren, self).get_application_config(
                         '{}/%(appname)s.ini'.format(self.directory))
 
-    def show_popuptype(self):
-        popupWindow=Popup(title='Выберите тип боли', size_hint=(None, None), size=(400,400))
-        popupWindow.open()
-
-    def show_popuploc(self):
-        popupWindow = Popup(title='Определите локализацию', size_hint=(None, None), size=(400, 400))
-        popupWindow.open()
-
     def build_config(self, config):
 
         config.adddefaultsection('General')
@@ -147,6 +139,21 @@ class Migren(App):
         self.manager.current = 'note'
         self.screen.ids.action_bar.left_action_items = \
             [['chevron-left', lambda x: self.back_screen(27)]]
+
+    def add_note2(self, *args):
+        #self.screen.ids.base.add_name_previous_screen()
+        #self.nav_drawer.toggle_nav_drawer()
+        self.manager.current = 'note2'
+        self.screen.ids.action_bar.left_action_items = \
+            [['chevron-left', lambda x: self.back_screen(27)]]
+
+    def add_note3(self, *args):
+        #self.screen.ids.base.add_name_previous_screen()
+        #self.nav_drawer.toggle_nav_drawer()
+        self.manager.current = 'note3'
+        self.screen.ids.action_bar.left_action_items = \
+            [['chevron-left', lambda x: self.back_screen(27)]]
+
 
 
     def show_diary(self, *args):

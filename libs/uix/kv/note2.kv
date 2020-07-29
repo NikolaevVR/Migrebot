@@ -1,7 +1,7 @@
 
 
-<Note>:
-    name: 'note'
+<Note2>:
+    name: 'note2'
     FloatLayout:
 
         Image:
@@ -23,7 +23,7 @@
             halign: 'left'
             color: app.theme_cls.primary_color
             font_size: '17sp'
-            text: app.translation._('Добавление записи'+'\n'+'Тип боли')
+            text: app.translation._('Добавление записи'+'\n'+'Локализация боли')
 
         GridLayout:
             size_hint: 1, 10
@@ -71,4 +71,4 @@
 
         Button:
             text: 'Далее'
-            on_press: app.add_note2()
+            on_press: app.add_note3()

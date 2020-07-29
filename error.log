@@ -1,7 +1,58 @@
 Traceback (most recent call last):
-  File "D:/учеба/Мигребот/main.py", line 61, in main
-    from migren import Migren
-  File "D:\учеба\Мигребот\migren.py", line 88
-    popupWindow=Popup(title='Выберите тип боли',content=Button(text:'zalupa'), size_hint=(None, None), size=(400,400))
-                                                                   ^
-SyntaxError: invalid syntax
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 700, in _apply_rule
+    setattr(widget_set, key, value)
+  File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+  File "kivy\properties.pyx", line 497, in kivy.properties.Property.__set__
+  File "kivy\properties.pyx", line 1353, in kivy.properties.ReferenceListProperty.set
+  File "kivy\properties.pyx", line 1337, in kivy.properties.ReferenceListProperty.convert
+ValueError: GridLayout.size_hint must be a list or a tuple
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/Юрий/Downloads/Migrebot/main.py", line 66, in main
+    app.run()
+  File "C:\Python\lib\site-packages\kivy\app.py", line 829, in run
+    root = self.build()
+  File "C:\Users\Юрий\Downloads\Migrebot\migren.py", line 99, in build
+    self.screen = StartScreen()
+  File "C:\Python\lib\site-packages\kivy\uix\boxlayout.py", line 145, in __init__
+    super(BoxLayout, self).__init__(**kwargs)
+  File "C:\Python\lib\site-packages\kivy\uix\layout.py", line 76, in __init__
+    super(Layout, self).__init__(**kwargs)
+  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 361, in __init__
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 659, in _apply_rule
+    child, crule, rootrule, rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 657, in _apply_rule
+    root=rctx['ids']['root'], rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 469, in apply_class_lang_rules
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 538, in apply
+    rule_children=rule_children)
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 707, in _apply_rule
+    e), cause=tb)
+kivy.lang.builder.BuilderException: Parser: File "<inline>", line 29:
+...
+     27:
+     28:        GridLayout:
+>>   29:            size_hint: 10
+     30:            rows: 10
+     31:            Button:
+...
+ValueError: GridLayout.size_hint must be a list or a tuple
+  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 700, in _apply_rule
+    setattr(widget_set, key, value)
+  File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+  File "kivy\properties.pyx", line 497, in kivy.properties.Property.__set__
+  File "kivy\properties.pyx", line 1353, in kivy.properties.ReferenceListProperty.set
+  File "kivy\properties.pyx", line 1337, in kivy.properties.ReferenceListProperty.convert
+
