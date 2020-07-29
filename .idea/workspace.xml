@@ -7,141 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/migren.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="-1598">
-                <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              </first_editor>
-              <second_editor relative-caret-position="-119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/basescreen.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/navdrawer.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/diary.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="62" column="23" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="D:\учеба\Мигребот" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/libs/uix/kv/startscreen.kv" />
-        <option value="$PROJECT_DIR$/libs/uix/kv/basescreen.kv" />
-        <option value="$PROJECT_DIR$/libs/uix/kv/diary.kv" />
-        <option value="$PROJECT_DIR$/libs/uix/kv/note.kv" />
-        <option value="$PROJECT_DIR$/migren.py" />
-        <option value="$PROJECT_DIR$/libs/uix/kv/navdrawer.kv" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectId" id="1fEiizlZaRmbRbxwyD2hbVKwspO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Мигребот" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Мигребот" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Мигребот" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="uix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Мигребот" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="uix" type="462c0819:PsiDirectoryNode" />
-              <item name="baseclass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Мигребот" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Мигребот" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="uix" type="462c0819:PsiDirectoryNode" />
-              <item name="kv" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -155,21 +27,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Юрий\Downloads\Migrebot\libs\uix\baseclass" />
       <recent name="C:\Users\Юрий\Downloads\Migrebot-master\libs\uix\baseclass" />
       <recent name="C:\Users\Юрий\Downloads\Migrebot-master\libs\uix\kv" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="dialogs" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -270,32 +131,9 @@
       <updated>1595533645776</updated>
       <workItem from="1595789788379" duration="4508000" />
       <workItem from="1595794702702" duration="11000" />
+      <workItem from="1596022512149" duration="4487000" />
     </task>
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="make" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -305,30 +143,31 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="559" y="119" key="#main/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595789800827" />
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom" timestamp="1595794713145">
+    <state width="1637" height="379" key="GridCell.Tab.0.bottom" timestamp="1596036727937">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595794713145" />
-    <state width="1637" height="271" key="GridCell.Tab.0.center" timestamp="1595794713145">
+    <state width="1637" height="379" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596036727937" />
+    <state width="1637" height="379" key="GridCell.Tab.0.center" timestamp="1596036727937">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.center/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595794713145" />
-    <state width="1637" height="271" key="GridCell.Tab.0.left" timestamp="1595794713144">
+    <state width="1637" height="379" key="GridCell.Tab.0.center/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596036727937" />
+    <state width="1637" height="379" key="GridCell.Tab.0.left" timestamp="1596036727937">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.left/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595794713144" />
-    <state width="1637" height="271" key="GridCell.Tab.0.right" timestamp="1595794713145">
+    <state width="1637" height="379" key="GridCell.Tab.0.left/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596036727937" />
+    <state width="1637" height="379" key="GridCell.Tab.0.right" timestamp="1596036727937">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.right/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595794713145" />
-    <state x="341" y="147" key="SettingsEditor" timestamp="1595789811306">
+    <state width="1637" height="379" key="GridCell.Tab.0.right/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596036727937" />
+    <state x="341" y="147" key="SettingsEditor" timestamp="1596024008163">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="341" y="147" key="SettingsEditor/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595789811306" />
-    <state x="536" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1595794703030">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="341" y="147" key="SettingsEditor/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596024008163" />
+    <state x="2116" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596022512248">
+      <screen x="1680" y="-50" width="1366" height="768" />
     </state>
     <state x="536" y="328" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595794703030" />
+    <state x="2116" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.-50.1366.768@1680.-50.1366.768" timestamp="1596022512248" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -342,113 +181,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Migrebot$main.coverage" NAME="main Coverage Results" MODIFIED="1596036564529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Migrebot1$main.coverage" NAME="main Coverage Results" MODIFIED="1595794704712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Migrebot_master$main.coverage" NAME="main Coverage Results" MODIFIED="1595794240748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/about.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/diary.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="289">
-            <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
-            <folding>
-              <element signature="e#234#275#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/startscreen.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/navdrawer.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/applibs/kivymd/navigationdrawer.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="323">
-            <caret line="350" column="13" lean-forward="true" selection-start-line="350" selection-start-column="13" selection-end-line="350" selection-end-column="25" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/diary.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/note.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/basescreen.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migren.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-1598">
-            <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

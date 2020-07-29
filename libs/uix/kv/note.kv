@@ -25,34 +25,8 @@
             font_size: '17sp'
             text: app.translation._('Добавление записи'+'\n'+'Тип боли')
 
-        GridLayout:
-            rows: 5
-            Button:
-                text: '1'
-            Button:
-                text: '2'
-
-            Button:
-                text: '3'
-            Button:
-                text: '4'
-
-            Button:
-                text: '5'
-            Button:
-                text: '6'
-
-            Button:
-                text: '7'
-            Button:
-                text: '8'
-
-            Button:
-                text: '9'
-            Button:
-                text: '10'
-
-
+        Button:
+            text: 'Добавить'
 
         Label:
             size_hint: None, None
@@ -63,33 +37,79 @@
             font_size: '17sp'
             text: app.translation._('Локализация боли')
 
+        Button:
+            text: 'Добавить'
+
+        Label:
+            size_hint: None, None
+            height: dp(17)
+            width: self.texture_size[0]
+            halign: 'left'
+            color: app.theme_cls.primary_color
+            font_size: '17sp'
+            text: app.translation._('Сила боли')
+
         GridLayout:
-            rows: 5
+            rows: 1
             Button:
                 text: '1'
             Button:
                 text: '2'
-
             Button:
                 text: '3'
             Button:
                 text: '4'
-
             Button:
                 text: '5'
             Button:
                 text: '6'
-
             Button:
                 text: '7'
             Button:
                 text: '8'
-
             Button:
                 text: '9'
             Button:
                 text: '10'
 
+        Label:
+            size_hint: None, None
+            height: dp(17)
+            width: self.texture_size[0]
+            halign: 'left'
+            color: app.theme_cls.primary_color
+            font_size: '17sp'
+            text: app.translation._('Продолжительность боли')
+
+
+        GridLayout:
+            rows: 1
+            TextInput:
+                id: hours
+                hint_text:'часы'
+                size_hint: 1, 0.5
+                font_size: '14sp'
+            Label:
+                size_hint: None, None
+                height: dp(17)
+                width: self.texture_size[0]
+                halign: 'left'
+                color: app.theme_cls.primary_color
+                font_size: '17sp'
+                text: app.translation._('Часов')
+            TextInput:
+                id: minutes
+                hint_text:'минуты'
+                size_hint: 1, 0.5
+                font_size: '14sp'
+            Label:
+                size_hint: None, None
+                height: dp(17)
+                width: self.texture_size[0]
+                halign: 'left'
+                color: app.theme_cls.primary_color
+                font_size: '17sp'
+                text: app.translation._('Минут')
 
         Label:
             size_hint: None, None
@@ -101,7 +121,7 @@
             text: app.translation._('Комментарий к записи')
 
         TextInput:
-            id: theme
+            id: comment
             hint_text:'Введите Комментарий'
             size_hint: 1, 0.5
             font_size: '14sp'
