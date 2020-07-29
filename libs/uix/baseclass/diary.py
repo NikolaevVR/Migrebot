@@ -16,7 +16,10 @@ from kivy.uix.screenmanager import Screen
 from kivy.properties import ObjectProperty
 
 class Diary(Screen):
-    mail = ObjectProperty()
+    mail_to = ObjectProperty()
     theme = ObjectProperty()
+    add_mail = ObjectProperty()
+    user_name = ObjectProperty()
+    comment = ObjectProperty()
 
 
