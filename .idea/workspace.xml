@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="D:\учеба\Мигребот" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -32,6 +39,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Мигребот" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dialogs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Мигребот" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,6 +130,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.migren" />
         <item itemvalue="Python.dialogs" />
       </list>
@@ -138,6 +168,11 @@
       <workItem from="1595964825573" duration="16000" />
       <workItem from="1595966471928" duration="589000" />
       <workItem from="1595967074495" duration="25000" />
+      <workItem from="1595968736255" duration="5844000" />
+      <workItem from="1595974611829" duration="12000" />
+      <workItem from="1595974951172" duration="3680000" />
+      <workItem from="1595978676826" duration="4895000" />
+      <workItem from="1595983704213" duration="25000" />
     </task>
     <servers />
   </component>
@@ -149,30 +184,30 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="559" y="119" key="#main/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595958400859" />
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom" timestamp="1595967060490">
+    <state width="1637" height="271" key="GridCell.Tab.0.bottom" timestamp="1595983574759">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595967060490" />
-    <state width="1637" height="271" key="GridCell.Tab.0.center" timestamp="1595967060490">
+    <state width="1637" height="271" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595983574759" />
+    <state width="1637" height="271" key="GridCell.Tab.0.center" timestamp="1595983574759">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.center/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595967060490" />
-    <state width="1637" height="271" key="GridCell.Tab.0.left" timestamp="1595967060490">
+    <state width="1637" height="271" key="GridCell.Tab.0.center/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595983574759" />
+    <state width="1637" height="271" key="GridCell.Tab.0.left" timestamp="1595983574759">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.left/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595967060490" />
-    <state width="1637" height="271" key="GridCell.Tab.0.right" timestamp="1595967060490">
+    <state width="1637" height="271" key="GridCell.Tab.0.left/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595983574759" />
+    <state width="1637" height="271" key="GridCell.Tab.0.right" timestamp="1595983574759">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.right/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595967060490" />
-    <state x="341" y="147" key="SettingsEditor" timestamp="1595958406776">
+    <state width="1637" height="271" key="GridCell.Tab.0.right/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595983574759" />
+    <state x="341" y="147" key="SettingsEditor" timestamp="1595976920486">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="341" y="147" key="SettingsEditor/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595958406776" />
-    <state x="536" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1595967074486">
+    <state x="341" y="147" key="SettingsEditor/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595976920486" />
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1595983704510">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="536" y="328" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595967074486" />
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1595983704510" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -182,13 +217,19 @@
           <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/migren.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Migrebot$main.coverage" NAME="main Coverage Results" MODIFIED="1595967029699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Migrebot1$main.coverage" NAME="main Coverage Results" MODIFIED="1595964478243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Migrebot_BomjVetka$Test.coverage" NAME="Test Coverage Results" MODIFIED="1595975038710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Migrebot_master$main.coverage" NAME="main Coverage Results" MODIFIED="1595794240748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Migrebot_BomjVetka$main.coverage" NAME="main Coverage Results" MODIFIED="1595962004998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Migrebot_BomjVetka$main.coverage" NAME="main Coverage Results" MODIFIED="1595983539519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

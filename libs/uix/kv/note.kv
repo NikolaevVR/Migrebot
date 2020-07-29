@@ -11,80 +11,93 @@
 
     BoxLayout:
         orientation: 'vertical'
-        padding: [Window.width*0.1,Window.height*0.05]
+        padding: [Window.width*0.1, Window.height*0.05]
         spacing: Window.height*0.02
 
-        Label:
-            size_hint: None, None
-            height: dp(20)
-            width: self.texture_size[0]
-            halign: 'left'
-            color: [app.theme_cls.primary_color]
-            font_size: '18sp'
-            text: app.translation._('Добавление записи')
+
 
         Label:
             size_hint: None, None
-            height: dp(20)
+            height: dp(17)
             width: self.texture_size[0]
             halign: 'left'
             color: app.theme_cls.primary_color
-            font_size: '18sp'
-            text: app.translation._('Тип боли')
+            font_size: '17sp'
+            text: app.translation._('Добавление записи'+'\n'+'Тип боли')
 
-        BoxLayout:
-            orientation: 'horizontal'
+        GridLayout:
+            rows: 5
             Button:
                 text: '1'
-                on_press:  app.Send_Mail()
             Button:
                 text: '2'
-                on_press:  app.Send_Mail()
 
-        BoxLayout:
-            orientation: 'horizontal'
             Button:
                 text: '3'
-                on_press:  app.Send_Mail()
             Button:
                 text: '4'
-                on_press:  app.Send_Mail()
+
+            Button:
+                text: '5'
+            Button:
+                text: '6'
+
+            Button:
+                text: '7'
+            Button:
+                text: '8'
+
+            Button:
+                text: '9'
+            Button:
+                text: '10'
+
 
 
         Label:
             size_hint: None, None
-            height: dp(20)
+            height: dp(17)
             width: self.texture_size[0]
             halign: 'left'
             color: app.theme_cls.primary_color
-            font_size: '18sp'
+            font_size: '17sp'
             text: app.translation._('Локализация боли')
 
-        BoxLayout:
-            orientation: 'horizontal'
+        GridLayout:
+            rows: 5
             Button:
                 text: '1'
-                on_press:  app.Send_Mail()
             Button:
                 text: '2'
-                on_press:  app.Send_Mail()
 
-        BoxLayout:
-            orientation: 'horizontal'
             Button:
                 text: '3'
-                on_press:  app.Send_Mail()
             Button:
                 text: '4'
-                on_press:  app.Send_Mail()
+
+            Button:
+                text: '5'
+            Button:
+                text: '6'
+
+            Button:
+                text: '7'
+            Button:
+                text: '8'
+
+            Button:
+                text: '9'
+            Button:
+                text: '10'
+
 
         Label:
             size_hint: None, None
-            height: dp(20)
+            height: dp(17)
             width: self.texture_size[0]
             halign: 'left'
             color: app.theme_cls.primary_color
-            font_size: '18sp'
+            font_size: '17sp'
             text: app.translation._('Комментарий к записи')
 
         TextInput:
@@ -94,5 +107,5 @@
             font_size: '14sp'
 
         Button:
-            text: 'Отправить'
-            on_press:  app.Send_Mail()
+            text: 'Добавить'
+            size_hint: 1, 0.25

@@ -34,6 +34,11 @@ from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+import xlrd
+import xlwt
+from xlutils.copy import copy
+from datetime import datetime
+
 class Migren(App):
     title = 'Дневник головной боли'
     icon = 'icon.png'
@@ -41,6 +46,8 @@ class Migren(App):
     theme_cls = ThemeManager()
     theme_cls.primary_palette = 'Grey'
     lang = StringProperty('en')
+
+
 
     def __init__(self, **kvargs):
         super(Migren, self).__init__(**kvargs)
@@ -130,17 +137,29 @@ class Migren(App):
             [['chevron-left', lambda x: self.back_screen(27)]]
 
     def send_email(self, *args):
-        addr_from = "Создать почту для бота"  # Отправитель
+        addr_from = "Почта Бота"  # Отправитель
         password = "Пароль от почты"  # Пароль
 
         msg = MIMEMultipart()  # Создаем сообщение
         msg['From'] = addr_from  # Адресат
         msg['To'] = self.screen.ids.diary.ids.mail_to.text  # Получатель
         msg['Subject'] = self.screen.ids.diary.ids.theme.text  # Тема сообщения
+        users_name = self.screen.ids.diary.ids.user_name.text.replace(' ', '_')
         name = 'diary.xls'
         filepath = os.path.join(os.getcwd(), name)
         filename = os.path.basename(filepath)
-        body = 'Адресс для обратной связи: ' + self.screen.ids.diary.ids.add_mail.text  # Текст сообщения
+        if os.path.isfile(filepath):
+            rb = xlrd.open_workbook(filepath, formatting_info=True)
+            wb = copy(rb)
+            wb.save(users_name+'_diary.xls')
+            os.remove(filepath)
+        name = users_name+'_diary.xls'
+        filepath = os.path.join(os.getcwd(), name)
+        filename = os.path.basename(filepath)
+
+        body = 'Дневник головной боли:\n\nПациент: '+ self.screen.ids.diary.ids.user_name.text + '\n'+\
+                'Комментарий пациента: ' + self.screen.ids.diary.ids.comment.text + '\n\n' +\
+            'Адресс для обратной связи: ' + self.screen.ids.diary.ids.add_mail.text  # Текст сообщения
         msg.attach(MIMEText(body, 'plain'))  # Добавляем в сообщение текст
 
         if os.path.isfile(filepath):  # Если файл существует
@@ -160,7 +179,43 @@ class Migren(App):
         server.login(addr_from, password)  # Получаем доступ
         server.send_message(msg)  # Отправляем сообщение
         server.quit()  # Выходим
+
+        rb = xlrd.open_workbook(filepath, formatting_info=True)
+        wb = copy(rb)
+        wb.save(users_name+'_old_diary.xls')
+        font0 = xlwt.Font()
+        font0.name = 'Times New Roman'
+        font0.bold = True
+        style0 = xlwt.XFStyle()
+        style0.font = font0
+        style1 = xlwt.XFStyle()
+        style1.num_format_str = 'D-MMM-YY'
+        sheet = str(datetime.now())
+        sheet = sheet[0:10]
+        wb = xlwt.Workbook()
+        ws = wb.add_sheet(sheet)
+        Col = ws.col(0)
+        Col.width = 256 * 21
+        ws.write(0, 0, 'Дата и время', style0)
+        Col = ws.col(1)
+        Col.width = 256 * 41
+        ws.write(0, 1, 'Тип боли', style0)
+        Col = ws.col(2)
+        Col.width = 256 * 41
+        ws.write(0, 2, 'Локализация боли', style0)
+        Col = ws.col(3)
+        Col.width = 256 * 23
+        ws.write(0, 3, 'Продолжительность боли', style0)
+        Col = ws.col(4)
+        Col.width = 256 * 65
+        ws.write(0, 4, 'Комментарий пациента', style0)
+        wb.save(name)
+
         toast(self.translation._('Дневник отправлен'))
+        self.screen.ids.diary.ids.mail_to.text = ''
+        self.screen.ids.diary.ids.theme.text = ''
+        self.screen.ids.diary.ids.comment.text = ''
+
 
     def show_plugins(self, *args):
         self.plugin.show_plugins()

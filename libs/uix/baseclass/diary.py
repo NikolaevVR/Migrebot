@@ -19,5 +19,7 @@ class Diary(Screen):
     mail_to = ObjectProperty()
     theme = ObjectProperty()
     add_mail = ObjectProperty()
+    user_name = ObjectProperty()
+    comment = ObjectProperty()
 
 
