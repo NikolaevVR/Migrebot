@@ -1,0 +1,74 @@
+
+
+<Note3>:
+    name: 'note3'
+    FloatLayout:
+
+        Image:
+            source: 'icon.png'
+            opacity: .4
+
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: [Window.width*0.1, Window.height*0.05]
+        spacing: Window.height*0.02
+
+
+        Label:
+            size_hint: None, None
+            height: dp(17)
+            width: self.texture_size[0]
+            halign: 'left'
+            color: app.theme_cls.primary_color
+            font_size: '17sp'
+            text: app.translation._('Добавление записи'+'\n'+'Продолжительность боли'+'\n')
+
+        Label:
+            size_hint: None, None
+            height: dp(17)
+            width: self.texture_size[0]
+            halign: 'left'
+            color: app.theme_cls.primary_color
+            font_size: '17sp'
+            text: app.translation._('Начало                            Конец')
+
+        GridLayout:
+            rows: 1
+            TextInput:
+                id: start
+                hint_text:'Время начала'
+                size_hint: 0.1, 0.15
+                font_size: '14sp'
+            Label:
+                size_hint: None, None
+                height: dp(17)
+                width: self.texture_size[0]
+                halign: 'left'
+                color: app.theme_cls.primary_color
+                font_size: '17sp'
+                text: app.translation._('       ')
+            TextInput:
+                id: end
+                hint_text:'Время окончания'
+                size_hint: 0.1, 0.15
+                font_size: '14sp'
+
+        Label:
+            size_hint: None, None
+            height: dp(17)
+            width: self.texture_size[0]
+            halign: 'left'
+            color: app.theme_cls.primary_color
+            font_size: '17sp'
+            text: app.translation._('Комментарий к записи')
+
+        TextInput:
+            id: comment
+            hint_text:'Введите Комментарий'
+            size_hint: 1, 6
+            font_size: '14sp'
+
+        Button:
+            text: 'Добавить запись в дневник'
+            on_press: app.back_screen()
