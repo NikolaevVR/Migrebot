@@ -13,6 +13,7 @@ from kivy.uix.popup import Popup
 from kivy.core.window import Window
 from kivy.config import ConfigParser
 from kivy.clock import Clock
+from kivy.uix.button import Button
 from kivy.utils import get_color_from_hex, get_hex_from_color
 from kivy.metrics import dp
 from kivy.properties import ObjectProperty, StringProperty
@@ -30,6 +31,11 @@ from kivymd.theming import ThemeManager
 from toast import toast
 from dialogs import card
 
+from kivy.uix.floatlayout import FloatLayout
+from kivy.properties import ObjectProperty
+from kivy.uix.widget import Widget
+from kivy.uix.label import Label
+
 import mimetypes
 from email import encoders
 from email.mime.base import MIMEBase
@@ -42,6 +48,9 @@ import xlwt
 from xlutils.copy import copy
 from datetime import datetime
 
+
+
+
 class Migren(App):
     title = 'Дневник головной боли'
     icon = 'icon.png'
@@ -49,7 +58,6 @@ class Migren(App):
     theme_cls = ThemeManager()
     theme_cls.primary_palette = 'Grey'
     lang = StringProperty('en')
-
 
 
     def __init__(self, **kvargs):
@@ -78,6 +86,10 @@ class Migren(App):
 
     def show_popuptype(self):
         popupWindow=Popup(title='Выберите тип боли', size_hint=(None, None), size=(400,400))
+        popupWindow.open()
+
+    def show_popuploc(self):
+        popupWindow = Popup(title='Определите локализацию', size_hint=(None, None), size=(400, 400))
         popupWindow.open()
 
     def build_config(self, config):
