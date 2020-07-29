@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71379d6c-b271-4720-8f58-b2a161ec94ad" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +20,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/migren.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="-595">
-                <caret line="175" column="35" lean-forward="true" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="58" />
+              <first_editor relative-caret-position="102">
+                <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
                 <folding>
                   <element signature="e#2#11#0" expanded="true" />
                 </folding>
@@ -35,52 +36,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-            </state>
+        <entry file="file://$PROJECT_DIR$/error.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-686" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/basescreen.kv">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="327">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/navdrawer.py">
+        <entry file="file://$PROJECT_DIR$/libs/uix/kv/basescreen.kv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="31" selection-start-line="31" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/uix/kv/PopupType.kv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/PopupType.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor />
+              <first_editor relative-caret-position="68">
+                <caret line="4" selection-start-line="4" selection-end-line="4" />
+                <folding>
+                  <element signature="e#1#45#0" expanded="true" />
+                </folding>
+              </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/diary.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="62" column="23" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="D:\учеба\Мигребот" />
@@ -92,10 +99,13 @@
       <list>
         <option value="$PROJECT_DIR$/libs/uix/kv/startscreen.kv" />
         <option value="$PROJECT_DIR$/libs/uix/kv/diary.kv" />
-        <option value="$PROJECT_DIR$/libs/uix/kv/note.kv" />
         <option value="$PROJECT_DIR$/libs/uix/kv/navdrawer.kv" />
-        <option value="$PROJECT_DIR$/migren.py" />
         <option value="$PROJECT_DIR$/libs/uix/kv/basescreen.kv" />
+        <option value="$PROJECT_DIR$/libs/uix/baseclass/Popup.py" />
+        <option value="$PROJECT_DIR$/libs/uix/kv/Popup.kv" />
+        <option value="$PROJECT_DIR$/libs/uix/baseclass/PopupType.py" />
+        <option value="$PROJECT_DIR$/libs/uix/kv/note.kv" />
+        <option value="$PROJECT_DIR$/migren.py" />
       </list>
     </option>
   </component>
@@ -112,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,7 +170,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -295,13 +305,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28150135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,36 +383,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/diary.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="289">
-            <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
-            <folding>
-              <element signature="e#234#275#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/uix/kv/startscreen.kv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/navdrawer.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -425,8 +410,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/uix/kv/diary.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
+        <state relative-caret-position="1054">
           <caret line="62" column="23" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/navdrawer.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="-51" />
+          <second_editor relative-caret-position="-51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/diary.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="221">
+            <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
+            <folding>
+              <element signature="e#234#275#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/Popup.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <folding>
+              <element signature="e#0#44#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/kv/Popup.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/kv/PopupType.kv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/uix/baseclass/PopupType.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="68">
+            <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <folding>
+              <element signature="e#1#45#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -438,37 +487,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migren.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-595">
-            <caret line="175" column="35" lean-forward="true" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="58" />
-            <folding>
-              <element signature="e#2#11#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/navdrawer.kv">
+    <entry file="file://$PROJECT_DIR$/libs/uix/kv/basescreen.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        <state relative-caret-position="378">
+          <caret line="31" selection-start-line="31" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/uix/kv/note.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        <state relative-caret-position="327">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/uix/kv/basescreen.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+    <entry file="file://$PROJECT_DIR$/error.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-686" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migren.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="102">
+            <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+            <folding>
+              <element signature="e#2#11#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
         </state>
       </provider>
     </entry>

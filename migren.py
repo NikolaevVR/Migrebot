@@ -6,8 +6,10 @@ import smtplib
 from ast import literal_eval
 
 from kivy.app import App
+
 from kivy.uix.modalview import ModalView
 from kivy.lang import Builder
+from kivy.uix.popup import Popup
 from kivy.core.window import Window
 from kivy.config import ConfigParser
 from kivy.clock import Clock
@@ -36,6 +38,7 @@ from email.mime.multipart import MIMEMultipart
 
 import xlrd
 import xlwt
+
 from xlutils.copy import copy
 from datetime import datetime
 
@@ -72,6 +75,10 @@ class Migren(App):
     def get_application_config(self):
         return super(Migren, self).get_application_config(
                         '{}/%(appname)s.ini'.format(self.directory))
+
+    def show_popuptype(self):
+        popupWindow=Popup(title='Выберите тип боли', size_hint=(None, None), size=(400,400))
+        popupWindow.open()
 
     def build_config(self, config):
 
