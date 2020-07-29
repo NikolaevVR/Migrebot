@@ -1,59 +1,63 @@
 Traceback (most recent call last):
-  File "C:/Users/Юрий/Downloads/Migrebot-BomjVetka/main.py", line 66, in main
+  File "D:/учеба/Мигребот/main.py", line 66, in main
     app.run()
-  File "C:\Python\lib\site-packages\kivy\app.py", line 855, in run
+  File "D:\Python\lib\site-packages\kivy\app.py", line 855, in run
     runTouchApp()
-  File "C:\Python\lib\site-packages\kivy\base.py", line 504, in runTouchApp
+  File "D:\Python\lib\site-packages\kivy\base.py", line 504, in runTouchApp
     EventLoop.window.mainloop()
-  File "C:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 747, in mainloop
+  File "D:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 747, in mainloop
     self._mainloop()
-  File "C:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 479, in _mainloop
+  File "D:\Python\lib\site-packages\kivy\core\window\window_sdl2.py", line 479, in _mainloop
     EventLoop.idle()
-  File "C:\Python\lib\site-packages\kivy\base.py", line 342, in idle
+  File "D:\Python\lib\site-packages\kivy\base.py", line 342, in idle
     self.dispatch_input()
-  File "C:\Python\lib\site-packages\kivy\base.py", line 327, in dispatch_input
+  File "D:\Python\lib\site-packages\kivy\base.py", line 327, in dispatch_input
     post_dispatch_input(*pop(0))
-  File "C:\Python\lib\site-packages\kivy\base.py", line 233, in post_dispatch_input
+  File "D:\Python\lib\site-packages\kivy\base.py", line 233, in post_dispatch_input
     listener.dispatch('on_motion', etype, me)
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\core\window\__init__.py", line 1402, in on_motion
+  File "D:\Python\lib\site-packages\kivy\core\window\__init__.py", line 1402, in on_motion
     self.dispatch('on_touch_down', me)
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\core\window\__init__.py", line 1418, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\core\window\__init__.py", line 1418, in on_touch_down
     if w.dispatch('on_touch_down', touch):
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
     if child.dispatch('on_touch_down', touch):
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Users\Юрий\Downloads\Migrebot-BomjVetka\libs/applibs\kivymd\vendor\navigationdrawer\__init__.py", line 597, in on_touch_down
+  File "D:\учеба\Мигребот\libs/applibs\kivymd\vendor\navigationdrawer\__init__.py", line 597, in on_touch_down
     self._main_panel.on_touch_down(touch)
-  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
     if child.dispatch('on_touch_down', touch):
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
     if child.dispatch('on_touch_down', touch):
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\uix\screenmanager.py", line 1191, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\screenmanager.py", line 1191, in on_touch_down
     return super(ScreenManager, self).on_touch_down(touch)
-  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
     if child.dispatch('on_touch_down', touch):
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\uix\relativelayout.py", line 288, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\relativelayout.py", line 288, in on_touch_down
     ret = super(RelativeLayout, self).on_touch_down(touch)
-  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
     if child.dispatch('on_touch_down', touch):
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\widget.py", line 549, in on_touch_down
     if child.dispatch('on_touch_down', touch):
   File "kivy\_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch
-  File "C:\Python\lib\site-packages\kivy\uix\behaviors\button.py", line 151, in on_touch_down
+  File "D:\Python\lib\site-packages\kivy\uix\behaviors\button.py", line 151, in on_touch_down
     self.dispatch('on_press')
   File "kivy\_event.pyx", line 703, in kivy._event.EventDispatcher.dispatch
   File "kivy\_event.pyx", line 1214, in kivy._event.EventObservers.dispatch
   File "kivy\_event.pyx", line 1098, in kivy._event.EventObservers._dispatch
-  File "C:\Python\lib\site-packages\kivy\lang\builder.py", line 64, in custom_callback
+  File "D:\Python\lib\site-packages\kivy\lang\builder.py", line 64, in custom_callback
     exec(__kvlang__.co_value, idmap)
   File "<string>", line 63, in <module>
-  File "C:\Users\Юрий\Downloads\Migrebot-BomjVetka\migren.py", line 162, in send_email
-    'C Уважением,\n'+ self.screen.ids.diary.ids.user_name.text.replace # Текст сообщения
-TypeError: can only concatenate str (not "builtin_function_or_method") to str
+  File "D:\учеба\Мигребот\migren.py", line 180, in send_email
+    server.send_message(msg)  # Отправляем сообщение
+  File "D:\Python\lib\smtplib.py", line 967, in send_message
+    rcpt_options)
+  File "D:\Python\lib\smtplib.py", line 888, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'5.7.1 [2] Message rejected under suspicion of SPAM; https://ya.cc/1IrBc 1596022394-ss1QFZCWtB-XDiWNae7')
