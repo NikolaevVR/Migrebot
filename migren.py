@@ -209,6 +209,15 @@ class Migren(App):
         rb = xlrd.open_workbook(filepath, formatting_info=True)
         wb = copy(rb)
         wb.save(users_name+'_old_diary.xls')
+
+        self.create_new_table(name)
+
+        toast(self.translation._('Дневник отправлен'))
+        self.screen.ids.diary.ids.mail_to.text = ''
+        self.screen.ids.diary.ids.theme.text = ''
+        self.screen.ids.diary.ids.comment.text = ''
+
+    def create_new_table(self, name, *args):
         font0 = xlwt.Font()
         font0.name = 'Times New Roman'
         font0.bold = True
@@ -237,10 +246,6 @@ class Migren(App):
         ws.write(0, 4, 'Комментарий пациента', style0)
         wb.save(name)
 
-        toast(self.translation._('Дневник отправлен'))
-        self.screen.ids.diary.ids.mail_to.text = ''
-        self.screen.ids.diary.ids.theme.text = ''
-        self.screen.ids.diary.ids.comment.text = ''
 
 
     def show_plugins(self, *args):

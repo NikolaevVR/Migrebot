@@ -195,10 +195,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="341" y="147" key="SettingsEditor/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596051857398" />
-    <state x="536" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1596054179504">
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1596120943684">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="536" y="328" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596054179504" />
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.-50.1366.768@0.0.1680.1010" timestamp="1596120943684" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -212,7 +212,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Migrebot$main.coverage" NAME="main Coverage Results" MODIFIED="1596054009018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Migrebot$main.coverage" NAME="main Coverage Results" MODIFIED="1596121020809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Migrebot1$main.coverage" NAME="main Coverage Results" MODIFIED="1595794704712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Md$main.coverage" NAME="main Coverage Results" MODIFIED="1596054186744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Migrebot_master$main.coverage" NAME="main Coverage Results" MODIFIED="1595794240748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
